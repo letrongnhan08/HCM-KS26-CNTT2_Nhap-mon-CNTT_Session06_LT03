@@ -13,5 +13,5 @@ Vẽ sơ đồ pipeline
 
 Phần 2: viết lại câu lệnh
 
-(Get-Content \*.log | Select-String "TIMEOUT") | Where-Object { $\_ -notmatch "NOT TIMEOUT" }
+(Get-Content \*.log | Select-String "TIMEOUT") | Where-Object { $\_ -notmatch "NOT TIMEOUT" }).Count
 
